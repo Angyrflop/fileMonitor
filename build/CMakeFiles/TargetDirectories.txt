@@ -1,0 +1,6 @@
+/home/dev/Documents/Projects/fileMonitor/build/CMakeFiles/fileMonitor.dir
+/home/dev/Documents/Projects/fileMonitor/build/CMakeFiles/edit_cache.dir
+/home/dev/Documents/Projects/fileMonitor/build/CMakeFiles/rebuild_cache.dir
+/home/dev/Documents/Projects/fileMonitor/build/libriary/include/CMakeFiles/helper.dir
+/home/dev/Documents/Projects/fileMonitor/build/libriary/include/CMakeFiles/edit_cache.dir
+/home/dev/Documents/Projects/fileMonitor/build/libriary/include/CMakeFiles/rebuild_cache.dir
