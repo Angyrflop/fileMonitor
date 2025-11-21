@@ -64,38 +64,38 @@ CMAKE_BINARY_DIR = /home/dev/Documents/Projects/fileMonitor/build
 
 # The main recursive "all" target.
 all: CMakeFiles/fileMonitor.dir/all
-all: libriary/include/all
+all: include/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: libriary/include/preinstall
+preinstall: include/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/fileMonitor.dir/clean
-clean: libriary/include/clean
+clean: include/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory libriary/include
+# Directory level rules for directory include
 
 # Recursive "all" directory target.
-libriary/include/all: libriary/include/CMakeFiles/helper.dir/all
-.PHONY : libriary/include/all
+include/all: include/CMakeFiles/helper.dir/all
+.PHONY : include/all
 
 # Recursive "preinstall" directory target.
-libriary/include/preinstall:
-.PHONY : libriary/include/preinstall
+include/preinstall:
+.PHONY : include/preinstall
 
 # Recursive "clean" directory target.
-libriary/include/clean: libriary/include/CMakeFiles/helper.dir/clean
-.PHONY : libriary/include/clean
+include/clean: include/CMakeFiles/helper.dir/clean
+.PHONY : include/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/fileMonitor.dir
 
 # All Build rule for target.
-CMakeFiles/fileMonitor.dir/all: libriary/include/CMakeFiles/helper.dir/all
+CMakeFiles/fileMonitor.dir/all: include/CMakeFiles/helper.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fileMonitor.dir/build.make CMakeFiles/fileMonitor.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fileMonitor.dir/build.make CMakeFiles/fileMonitor.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dev/Documents/Projects/fileMonitor/build/CMakeFiles --progress-num=1,2 "Built target fileMonitor"
@@ -118,30 +118,30 @@ CMakeFiles/fileMonitor.dir/clean:
 .PHONY : CMakeFiles/fileMonitor.dir/clean
 
 #=============================================================================
-# Target rules for target libriary/include/CMakeFiles/helper.dir
+# Target rules for target include/CMakeFiles/helper.dir
 
 # All Build rule for target.
-libriary/include/CMakeFiles/helper.dir/all:
-	$(MAKE) $(MAKESILENT) -f libriary/include/CMakeFiles/helper.dir/build.make libriary/include/CMakeFiles/helper.dir/depend
-	$(MAKE) $(MAKESILENT) -f libriary/include/CMakeFiles/helper.dir/build.make libriary/include/CMakeFiles/helper.dir/build
+include/CMakeFiles/helper.dir/all:
+	$(MAKE) $(MAKESILENT) -f include/CMakeFiles/helper.dir/build.make include/CMakeFiles/helper.dir/depend
+	$(MAKE) $(MAKESILENT) -f include/CMakeFiles/helper.dir/build.make include/CMakeFiles/helper.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dev/Documents/Projects/fileMonitor/build/CMakeFiles --progress-num=3,4 "Built target helper"
-.PHONY : libriary/include/CMakeFiles/helper.dir/all
+.PHONY : include/CMakeFiles/helper.dir/all
 
 # Build rule for subdir invocation for target.
-libriary/include/CMakeFiles/helper.dir/rule: cmake_check_build_system
+include/CMakeFiles/helper.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev/Documents/Projects/fileMonitor/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libriary/include/CMakeFiles/helper.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 include/CMakeFiles/helper.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev/Documents/Projects/fileMonitor/build/CMakeFiles 0
-.PHONY : libriary/include/CMakeFiles/helper.dir/rule
+.PHONY : include/CMakeFiles/helper.dir/rule
 
 # Convenience name for target.
-helper: libriary/include/CMakeFiles/helper.dir/rule
+helper: include/CMakeFiles/helper.dir/rule
 .PHONY : helper
 
 # clean rule for target.
-libriary/include/CMakeFiles/helper.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libriary/include/CMakeFiles/helper.dir/build.make libriary/include/CMakeFiles/helper.dir/clean
-.PHONY : libriary/include/CMakeFiles/helper.dir/clean
+include/CMakeFiles/helper.dir/clean:
+	$(MAKE) $(MAKESILENT) -f include/CMakeFiles/helper.dir/build.make include/CMakeFiles/helper.dir/clean
+.PHONY : include/CMakeFiles/helper.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

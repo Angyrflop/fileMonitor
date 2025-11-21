@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev/Documents/Projects/fileMonitor/build/CMakeFiles /home/dev/Documents/Projects/fileMonitor/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/dev/Documents/Projects/fileMonitor/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dev/Documents/Projects/fileMonitor/build/CMakeFiles /home/dev/Documents/Projects/fileMonitor/build/include//CMakeFiles/progress.marks
+	cd /home/dev/Documents/Projects/fileMonitor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 include/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev/Documents/Projects/fileMonitor/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/dev/Documents/Projects/fileMonitor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 include/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,68 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/dev/Documents/Projects/fileMonitor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 include/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/dev/Documents/Projects/fileMonitor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 include/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/dev/Documents/Projects/fileMonitor/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named fileMonitor
+# Convenience name for target.
+include/CMakeFiles/helper.dir/rule:
+	cd /home/dev/Documents/Projects/fileMonitor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 include/CMakeFiles/helper.dir/rule
+.PHONY : include/CMakeFiles/helper.dir/rule
 
-# Build rule for target.
-fileMonitor: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fileMonitor
-.PHONY : fileMonitor
-
-# fast build rule for target.
-fileMonitor/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fileMonitor.dir/build.make CMakeFiles/fileMonitor.dir/build
-.PHONY : fileMonitor/fast
-
-#=============================================================================
-# Target rules for targets named helper
-
-# Build rule for target.
-helper: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 helper
+# Convenience name for target.
+helper: include/CMakeFiles/helper.dir/rule
 .PHONY : helper
 
 # fast build rule for target.
 helper/fast:
-	$(MAKE) $(MAKESILENT) -f include/CMakeFiles/helper.dir/build.make include/CMakeFiles/helper.dir/build
+	cd /home/dev/Documents/Projects/fileMonitor/build && $(MAKE) $(MAKESILENT) -f include/CMakeFiles/helper.dir/build.make include/CMakeFiles/helper.dir/build
 .PHONY : helper/fast
 
-main.o: main.c.o
-.PHONY : main.o
+helper.o: helper.c.o
+.PHONY : helper.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fileMonitor.dir/build.make CMakeFiles/fileMonitor.dir/main.c.o
-.PHONY : main.c.o
+helper.c.o:
+	cd /home/dev/Documents/Projects/fileMonitor/build && $(MAKE) $(MAKESILENT) -f include/CMakeFiles/helper.dir/build.make include/CMakeFiles/helper.dir/helper.c.o
+.PHONY : helper.c.o
 
-main.i: main.c.i
-.PHONY : main.i
+helper.i: helper.c.i
+.PHONY : helper.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fileMonitor.dir/build.make CMakeFiles/fileMonitor.dir/main.c.i
-.PHONY : main.c.i
+helper.c.i:
+	cd /home/dev/Documents/Projects/fileMonitor/build && $(MAKE) $(MAKESILENT) -f include/CMakeFiles/helper.dir/build.make include/CMakeFiles/helper.dir/helper.c.i
+.PHONY : helper.c.i
 
-main.s: main.c.s
-.PHONY : main.s
+helper.s: helper.c.s
+.PHONY : helper.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fileMonitor.dir/build.make CMakeFiles/fileMonitor.dir/main.c.s
-.PHONY : main.c.s
+helper.c.s:
+	cd /home/dev/Documents/Projects/fileMonitor/build && $(MAKE) $(MAKESILENT) -f include/CMakeFiles/helper.dir/build.make include/CMakeFiles/helper.dir/helper.c.s
+.PHONY : helper.c.s
 
 # Help Target
 help:
@@ -174,11 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... fileMonitor"
 	@echo "... helper"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... helper.o"
+	@echo "... helper.i"
+	@echo "... helper.s"
 .PHONY : help
 
 
@@ -190,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/dev/Documents/Projects/fileMonitor/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -92,7 +92,7 @@ fileMonitor_EXTERNAL_OBJECTS =
 
 fileMonitor: CMakeFiles/fileMonitor.dir/main.c.o
 fileMonitor: CMakeFiles/fileMonitor.dir/build.make
-fileMonitor: libriary/include/libhelper.a
+fileMonitor: include/libhelper.a
 fileMonitor: CMakeFiles/fileMonitor.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dev/Documents/Projects/fileMonitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable fileMonitor"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fileMonitor.dir/link.txt --verbose=$(VERBOSE)
