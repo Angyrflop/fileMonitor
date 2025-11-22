@@ -5,6 +5,7 @@
 #include <signal.h>
 #include <string.h>
 #include <unistd.h>
+#include <stdbool.h>
 
 void print_Usage(char *argv0)
 {
@@ -38,28 +39,57 @@ int main(int argc, char *argv[])
             case 'c':
                 printf("Copyright: Jan Oliver Quant\n");
                 return 0;
+
             case 'f':
-            
                 filename = optarg;
-                printf("Just tell to yourself that it worked.\n");
+                printf("Reading: %s\n", filename);
                 break;
+            
+            default:
+            print_Usage(argv[0]);
+            return 0;
         }
     }
+
+    if (filename == NULL)
+    {
+        printf("Couldnt read %s\n", filename);
+        print_Usage(argv[0]);
+        return 1;
+    }
+
+    FILE *fh_input;
+    fh_input = fopen(filename, "rb");
+
+    char buffer[4096];  //4KB
+
+    size_t bytes_read;
+
+    long bytes_total = 0;
+
+    if (fh_input == NULL)
+    {
+        printf("Error while reading file, are you sure the while exists or isnt empty?\n");
+        return -1;
+    }
+
+    fseek(fh_input, 0, SEEK_END);   /*Goes to the end of the file*/
+
+    long size = ftell(fh_input);    
+
+    fseek(fh_input, 0, SEEK_SET);   
+
+    printf("File size: %ld bytes\n", size); 
+
+    while ((bytes_read = fread(buffer, 1, sizeof(buffer), fh_input)) > 0)
+    {
+        bytes_total += bytes_read;
+        printf("Read %zu bytes. (Total bytes: %ld)\n", bytes_read, bytes_total);
+        sleep(3);   /*test sleep, so the programm runs slower*/
+    }
     
-    // students = calloc(numStudents, sizeof(*students));
 
-    // *students = 2;
-    // students[2] = 6;
-    // students[5] = 66;
-
-
-
-    // printf("%d\n", *students);
-    // printf("%d, %d, %d", students[0], students[2], students[5]);
-
-    // printf("Bytes: %zu\n", numStudents * sizeof(*students));
-    // free(students);
-    //Used to make sure that i cannot accidently reuse it again
-    // students = NULL;
+    printf("Total bytes read: %ld\n", bytes_total);
+    fclose(fh_input);
     return 0;
 }

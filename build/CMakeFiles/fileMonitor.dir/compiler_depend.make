@@ -67,8 +67,11 @@ CMakeFiles/fileMonitor.dir/src/main.c.o: /home/dev/Documents/Projects/fileMonito
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
   /usr/include/x86_64-linux-gnu/sys/ucontext.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
 
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h:
 
 /usr/include/x86_64-linux-gnu/sys/ucontext.h:
 
