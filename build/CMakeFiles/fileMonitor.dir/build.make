@@ -69,28 +69,28 @@ include CMakeFiles/fileMonitor.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/fileMonitor.dir/flags.make
 
-CMakeFiles/fileMonitor.dir/main.c.o: CMakeFiles/fileMonitor.dir/flags.make
-CMakeFiles/fileMonitor.dir/main.c.o: /home/dev/Documents/Projects/fileMonitor/main.c
-CMakeFiles/fileMonitor.dir/main.c.o: CMakeFiles/fileMonitor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/Documents/Projects/fileMonitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/fileMonitor.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/fileMonitor.dir/main.c.o -MF CMakeFiles/fileMonitor.dir/main.c.o.d -o CMakeFiles/fileMonitor.dir/main.c.o -c /home/dev/Documents/Projects/fileMonitor/main.c
+CMakeFiles/fileMonitor.dir/src/main.c.o: CMakeFiles/fileMonitor.dir/flags.make
+CMakeFiles/fileMonitor.dir/src/main.c.o: /home/dev/Documents/Projects/fileMonitor/src/main.c
+CMakeFiles/fileMonitor.dir/src/main.c.o: CMakeFiles/fileMonitor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/Documents/Projects/fileMonitor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/fileMonitor.dir/src/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/fileMonitor.dir/src/main.c.o -MF CMakeFiles/fileMonitor.dir/src/main.c.o.d -o CMakeFiles/fileMonitor.dir/src/main.c.o -c /home/dev/Documents/Projects/fileMonitor/src/main.c
 
-CMakeFiles/fileMonitor.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/fileMonitor.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/Documents/Projects/fileMonitor/main.c > CMakeFiles/fileMonitor.dir/main.c.i
+CMakeFiles/fileMonitor.dir/src/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/fileMonitor.dir/src/main.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/Documents/Projects/fileMonitor/src/main.c > CMakeFiles/fileMonitor.dir/src/main.c.i
 
-CMakeFiles/fileMonitor.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/fileMonitor.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/Documents/Projects/fileMonitor/main.c -o CMakeFiles/fileMonitor.dir/main.c.s
+CMakeFiles/fileMonitor.dir/src/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/fileMonitor.dir/src/main.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/Documents/Projects/fileMonitor/src/main.c -o CMakeFiles/fileMonitor.dir/src/main.c.s
 
 # Object files for target fileMonitor
 fileMonitor_OBJECTS = \
-"CMakeFiles/fileMonitor.dir/main.c.o"
+"CMakeFiles/fileMonitor.dir/src/main.c.o"
 
 # External object files for target fileMonitor
 fileMonitor_EXTERNAL_OBJECTS =
 
-fileMonitor: CMakeFiles/fileMonitor.dir/main.c.o
+fileMonitor: CMakeFiles/fileMonitor.dir/src/main.c.o
 fileMonitor: CMakeFiles/fileMonitor.dir/build.make
 fileMonitor: include/libhelper.a
 fileMonitor: CMakeFiles/fileMonitor.dir/link.txt

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/fileMonitor.dir/main.c.o"
-  "CMakeFiles/fileMonitor.dir/main.c.o.d"
+  "CMakeFiles/fileMonitor.dir/src/main.c.o"
+  "CMakeFiles/fileMonitor.dir/src/main.c.o.d"
   "fileMonitor"
   "fileMonitor.pdb"
 )

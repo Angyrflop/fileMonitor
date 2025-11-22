@@ -1,1 +1,1 @@
-/usr/bin/cc CMakeFiles/fileMonitor.dir/main.c.o -o fileMonitor  include/libhelper.a 
+/usr/bin/cc CMakeFiles/fileMonitor.dir/src/main.c.o -o fileMonitor  include/libhelper.a 
