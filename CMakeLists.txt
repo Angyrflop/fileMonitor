@@ -11,6 +11,6 @@ set(CMAKE_C_EXTENSIONS  OFF)
 
 add_executable(${PROJECT_NAME} src/main.c)
 
-target_link_libraries(${PROJECT_NAME} helper)
+target_link_libraries(${PROJECT_NAME} rFileHandler)
 
 add_subdirectory(include)

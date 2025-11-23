@@ -130,17 +130,17 @@ fileMonitor/fast:
 .PHONY : fileMonitor/fast
 
 #=============================================================================
-# Target rules for targets named helper
+# Target rules for targets named rFileHandler
 
 # Build rule for target.
-helper: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 helper
-.PHONY : helper
+rFileHandler: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rFileHandler
+.PHONY : rFileHandler
 
 # fast build rule for target.
-helper/fast:
-	$(MAKE) $(MAKESILENT) -f include/CMakeFiles/helper.dir/build.make include/CMakeFiles/helper.dir/build
-.PHONY : helper/fast
+rFileHandler/fast:
+	$(MAKE) $(MAKESILENT) -f include/CMakeFiles/rFileHandler.dir/build.make include/CMakeFiles/rFileHandler.dir/build
+.PHONY : rFileHandler/fast
 
 src/main.o: src/main.c.o
 .PHONY : src/main.o
@@ -175,7 +175,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... fileMonitor"
-	@echo "... helper"
+	@echo "... rFileHandler"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

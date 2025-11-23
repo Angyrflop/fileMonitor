@@ -80,7 +80,7 @@ clean: include/clean
 # Directory level rules for directory include
 
 # Recursive "all" directory target.
-include/all: include/CMakeFiles/helper.dir/all
+include/all: include/CMakeFiles/rFileHandler.dir/all
 .PHONY : include/all
 
 # Recursive "preinstall" directory target.
@@ -88,14 +88,14 @@ include/preinstall:
 .PHONY : include/preinstall
 
 # Recursive "clean" directory target.
-include/clean: include/CMakeFiles/helper.dir/clean
+include/clean: include/CMakeFiles/rFileHandler.dir/clean
 .PHONY : include/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/fileMonitor.dir
 
 # All Build rule for target.
-CMakeFiles/fileMonitor.dir/all: include/CMakeFiles/helper.dir/all
+CMakeFiles/fileMonitor.dir/all: include/CMakeFiles/rFileHandler.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fileMonitor.dir/build.make CMakeFiles/fileMonitor.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fileMonitor.dir/build.make CMakeFiles/fileMonitor.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dev/Documents/Projects/fileMonitor/build/CMakeFiles --progress-num=1,2 "Built target fileMonitor"
@@ -118,30 +118,30 @@ CMakeFiles/fileMonitor.dir/clean:
 .PHONY : CMakeFiles/fileMonitor.dir/clean
 
 #=============================================================================
-# Target rules for target include/CMakeFiles/helper.dir
+# Target rules for target include/CMakeFiles/rFileHandler.dir
 
 # All Build rule for target.
-include/CMakeFiles/helper.dir/all:
-	$(MAKE) $(MAKESILENT) -f include/CMakeFiles/helper.dir/build.make include/CMakeFiles/helper.dir/depend
-	$(MAKE) $(MAKESILENT) -f include/CMakeFiles/helper.dir/build.make include/CMakeFiles/helper.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dev/Documents/Projects/fileMonitor/build/CMakeFiles --progress-num=3,4 "Built target helper"
-.PHONY : include/CMakeFiles/helper.dir/all
+include/CMakeFiles/rFileHandler.dir/all:
+	$(MAKE) $(MAKESILENT) -f include/CMakeFiles/rFileHandler.dir/build.make include/CMakeFiles/rFileHandler.dir/depend
+	$(MAKE) $(MAKESILENT) -f include/CMakeFiles/rFileHandler.dir/build.make include/CMakeFiles/rFileHandler.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dev/Documents/Projects/fileMonitor/build/CMakeFiles --progress-num=3,4 "Built target rFileHandler"
+.PHONY : include/CMakeFiles/rFileHandler.dir/all
 
 # Build rule for subdir invocation for target.
-include/CMakeFiles/helper.dir/rule: cmake_check_build_system
+include/CMakeFiles/rFileHandler.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev/Documents/Projects/fileMonitor/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 include/CMakeFiles/helper.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 include/CMakeFiles/rFileHandler.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev/Documents/Projects/fileMonitor/build/CMakeFiles 0
-.PHONY : include/CMakeFiles/helper.dir/rule
+.PHONY : include/CMakeFiles/rFileHandler.dir/rule
 
 # Convenience name for target.
-helper: include/CMakeFiles/helper.dir/rule
-.PHONY : helper
+rFileHandler: include/CMakeFiles/rFileHandler.dir/rule
+.PHONY : rFileHandler
 
 # clean rule for target.
-include/CMakeFiles/helper.dir/clean:
-	$(MAKE) $(MAKESILENT) -f include/CMakeFiles/helper.dir/build.make include/CMakeFiles/helper.dir/clean
-.PHONY : include/CMakeFiles/helper.dir/clean
+include/CMakeFiles/rFileHandler.dir/clean:
+	$(MAKE) $(MAKESILENT) -f include/CMakeFiles/rFileHandler.dir/build.make include/CMakeFiles/rFileHandler.dir/clean
+.PHONY : include/CMakeFiles/rFileHandler.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

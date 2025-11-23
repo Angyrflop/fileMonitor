@@ -117,42 +117,42 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-include/CMakeFiles/helper.dir/rule:
-	cd /home/dev/Documents/Projects/fileMonitor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 include/CMakeFiles/helper.dir/rule
-.PHONY : include/CMakeFiles/helper.dir/rule
+include/CMakeFiles/rFileHandler.dir/rule:
+	cd /home/dev/Documents/Projects/fileMonitor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 include/CMakeFiles/rFileHandler.dir/rule
+.PHONY : include/CMakeFiles/rFileHandler.dir/rule
 
 # Convenience name for target.
-helper: include/CMakeFiles/helper.dir/rule
-.PHONY : helper
+rFileHandler: include/CMakeFiles/rFileHandler.dir/rule
+.PHONY : rFileHandler
 
 # fast build rule for target.
-helper/fast:
-	cd /home/dev/Documents/Projects/fileMonitor/build && $(MAKE) $(MAKESILENT) -f include/CMakeFiles/helper.dir/build.make include/CMakeFiles/helper.dir/build
-.PHONY : helper/fast
+rFileHandler/fast:
+	cd /home/dev/Documents/Projects/fileMonitor/build && $(MAKE) $(MAKESILENT) -f include/CMakeFiles/rFileHandler.dir/build.make include/CMakeFiles/rFileHandler.dir/build
+.PHONY : rFileHandler/fast
 
-helper.o: helper.c.o
-.PHONY : helper.o
+rFileHandler.o: rFileHandler.c.o
+.PHONY : rFileHandler.o
 
 # target to build an object file
-helper.c.o:
-	cd /home/dev/Documents/Projects/fileMonitor/build && $(MAKE) $(MAKESILENT) -f include/CMakeFiles/helper.dir/build.make include/CMakeFiles/helper.dir/helper.c.o
-.PHONY : helper.c.o
+rFileHandler.c.o:
+	cd /home/dev/Documents/Projects/fileMonitor/build && $(MAKE) $(MAKESILENT) -f include/CMakeFiles/rFileHandler.dir/build.make include/CMakeFiles/rFileHandler.dir/rFileHandler.c.o
+.PHONY : rFileHandler.c.o
 
-helper.i: helper.c.i
-.PHONY : helper.i
+rFileHandler.i: rFileHandler.c.i
+.PHONY : rFileHandler.i
 
 # target to preprocess a source file
-helper.c.i:
-	cd /home/dev/Documents/Projects/fileMonitor/build && $(MAKE) $(MAKESILENT) -f include/CMakeFiles/helper.dir/build.make include/CMakeFiles/helper.dir/helper.c.i
-.PHONY : helper.c.i
+rFileHandler.c.i:
+	cd /home/dev/Documents/Projects/fileMonitor/build && $(MAKE) $(MAKESILENT) -f include/CMakeFiles/rFileHandler.dir/build.make include/CMakeFiles/rFileHandler.dir/rFileHandler.c.i
+.PHONY : rFileHandler.c.i
 
-helper.s: helper.c.s
-.PHONY : helper.s
+rFileHandler.s: rFileHandler.c.s
+.PHONY : rFileHandler.s
 
 # target to generate assembly for a file
-helper.c.s:
-	cd /home/dev/Documents/Projects/fileMonitor/build && $(MAKE) $(MAKESILENT) -f include/CMakeFiles/helper.dir/build.make include/CMakeFiles/helper.dir/helper.c.s
-.PHONY : helper.c.s
+rFileHandler.c.s:
+	cd /home/dev/Documents/Projects/fileMonitor/build && $(MAKE) $(MAKESILENT) -f include/CMakeFiles/rFileHandler.dir/build.make include/CMakeFiles/rFileHandler.dir/rFileHandler.c.s
+.PHONY : rFileHandler.c.s
 
 # Help Target
 help:
@@ -162,10 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... helper"
-	@echo "... helper.o"
-	@echo "... helper.i"
-	@echo "... helper.s"
+	@echo "... rFileHandler"
+	@echo "... rFileHandler.o"
+	@echo "... rFileHandler.i"
+	@echo "... rFileHandler.s"
 .PHONY : help
 
 

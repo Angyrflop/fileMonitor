@@ -6,6 +6,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <stdbool.h>
+#include "rFileHandler.h"
 
 void print_Usage(char *argv0)
 {
@@ -51,45 +52,40 @@ int main(int argc, char *argv[])
         }
     }
 
-    if (filename == NULL)
-    {
-        printf("Couldnt read %s\n", filename);
-        print_Usage(argv[0]);
-        return 1;
-    }
+    readFile(filename);
 
-    FILE *fh_input;
-    fh_input = fopen(filename, "rb");
+    // if (filename == NULL)
+    // {
+    //     printf("Couldnt read %s\n", filename);
+    //     print_Usage(argv[0]);
+    //     return 1;
+    // }
 
-    char buffer[4096];  //4KB
+    // FILE *fh_input;
+    // fh_input = fopen(filename, "rb");
 
-    size_t bytes_read;
+    // char buffer[4096];  //4KB
 
-    long bytes_total = 0;
+    // size_t bytes_read;
 
-    if (fh_input == NULL)
-    {
-        printf("Error while reading file, are you sure the while exists or isnt empty?\n");
-        return -1;
-    }
+    // long bytes_total = 0;
 
-    fseek(fh_input, 0, SEEK_END);   /*Goes to the end of the file*/
+    // if (fh_input == NULL)
+    // {
+    //     printf("Error while reading file, are you sure the while exists or isnt empty?\n");
+    //     return -1;
+    // }
 
-    long size = ftell(fh_input);    
 
-    fseek(fh_input, 0, SEEK_SET);   
-
-    printf("File size: %ld bytes\n", size); 
-
-    while ((bytes_read = fread(buffer, 1, sizeof(buffer), fh_input)) > 0)
-    {
-        bytes_total += bytes_read;
-        printf("Read %zu bytes. (Total bytes: %ld)\n", bytes_read, bytes_total);
-        sleep(3);   /*test sleep, so the programm runs slower*/
-    }
+    // while ((bytes_read = fread(buffer, 1, sizeof(buffer), fh_input)) > 0)
+    // {
+    //     bytes_total += bytes_read;
+    //     printf("Read %zu bytes. (Total bytes: %ld)\n", bytes_read, bytes_total);
+    //     sleep(1);   /*test sleep, so the programm runs slower*/
+    // }
     
 
-    printf("Total bytes read: %ld\n", bytes_total);
-    fclose(fh_input);
+    // printf("Total bytes read: %ld\n", bytes_total);
+    // fclose(fh_input);
     return 0;
 }

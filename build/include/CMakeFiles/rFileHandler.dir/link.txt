@@ -1,0 +1,2 @@
+/usr/bin/ar qc librFileHandler.a CMakeFiles/rFileHandler.dir/rFileHandler.c.o
+/usr/bin/ranlib librFileHandler.a

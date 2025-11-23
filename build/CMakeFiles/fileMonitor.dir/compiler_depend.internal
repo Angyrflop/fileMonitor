@@ -3,6 +3,7 @@
 
 CMakeFiles/fileMonitor.dir/src/main.c.o
  /home/dev/Documents/Projects/fileMonitor/src/main.c
+ /home/dev/Documents/Projects/fileMonitor/include/helper.h
  /usr/include/features-time64.h
  /usr/include/features.h
  /usr/include/signal.h
